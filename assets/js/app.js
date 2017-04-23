@@ -65,7 +65,7 @@ window.addEventListener("load", function(){
 
       addParPerfil("usuario nombre","Ruth Salvador");
       addParPerfil("usuario","Jedi Apprentice at Laboratoria. Trabajando para ver a más mujeres en el mundo de la programación.");
-      addParPerfil("usuario","Apr 23 - 5 min read")
+      addParPerfil("usuario","Apr 23 - 5 min read");
 
       function addParPerfil(clase, texto) {
         var parPerfil = document.createElement("p");
@@ -76,29 +76,61 @@ window.addEventListener("load", function(){
     }; addDatosPerfil();
   }; addTop();
 
+  /** Agregando centro**/
+  function addCenter(titulo, parrafo){
+    var center = document.createElement("section");
+    container.appendChild(center);
+
+    var title = document.createElement("h1");
+    center.appendChild(title);
+    title.appendChild(document.createTextNode(titulo));
+
+    var parCenter = document.createElement("p");
+    parCenter.setAttribute("class", "parrafo");
+    center.appendChild(parCenter);
+    parCenter.appendChild(document.createTextNode(parrafo));
+
+  }; addCenter("Hazlo con estilo : Tipografías, iconos y sprite", "Te imaginas el mundo sin tipos de letra, tamaños, colores, o sin iconos , nada, nada sería iguaaaaaal!!!! Pero gracias a muchos desarrolladores y diseñadores, hoy contamos con una inimaginable gama de fuentes para nuestro desarrollos web, pero la pregunta que nos hacemos es, ¿existen reglas, hay una mejor forma de hacerlo, no sé que tipografía usar? Tengo muchas preguntas y pocas respuestas!! Vamos paso a paso…");
 
 
+/** Agregando footer **/
+  function addFooter(){
+    var footer = document.createElement("footer");
+    cuerpo.appendChild(footer);
+    //footer.appendChild(document.createTextNode("~~ Coded by Ruth Salvador ~~"));
+
+    function footerLeft(){
+      var footLeft = document.createElement("nav");
+      footer.appendChild(footLeft);
+
+      addFootL("icon-heart");
+      addFootL("icon-chat");
+
+      function addFootL(clase) {
+        var span = document.createElement("span");
+        span.setAttribute("class", clase);
+        footLeft.appendChild(span);
+      }
+    }; footerLeft();
+
+    function footerRight(){
+      var footRight = document.createElement("nav");
+      footer.appendChild(footRight);
+
+      addFootR("icon-twitter");
+      addFootR("icon-facebook");
+      addFootR("icon-marcador");
+
+      function addFootR(clase) {
+        var span = document.createElement("span");
+        span.setAttribute("class", clase);
+        footRight.appendChild(span);
+      }
 
 
+    }; footerRight();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }; addFooter();
 
 })
