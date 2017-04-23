@@ -1,0 +1,83 @@
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.medium {
+    width: 128px;
+    height: 128px;
+    background-position: -525px -199px;
+}
+
+.foto {
+    width: 154px;
+    height: 87px;
+    background-position: -415px -5px;
+}
+
+.perfil {
+    width: 114px;
+    height: 116px;
+    background-position: -5px -615px;
+}
+
+.karin {
+    width: 87px;
+    height: 87px;
+    background-position: -579px -5px;
+}
+
+.lily {
+    width: 87px;
+    height: 87px;
+    background-position: -525px -102px;
+}
+
+.miriam {
+    width: 116px;
+    height: 116px;
+    background-position: -415px -337px;
+}
+
+.naomi {
+    width: 93px;
+    height: 116px;
+    background-position: -541px -337px;
+}
+
+.cajas {
+    width: 400px;
+    height: 120px;
+    background-position: -5px -5px;
+}
+
+.dom {
+    width: 400px;
+    height: 120px;
+    background-position: -5px -135px;
+}
+
+.html {
+    width: 400px;
+    height: 120px;
+    background-position: -5px -265px;
+}
+
+.sublime {
+    width: 400px;
+    height: 120px;
+    background-position: -129px -615px;
+}
+
+.pasos {
+    width: 368px;
+    height: 600px;
+    background-position: -676px -5px;
+}
+
+.l {
+    width: 100px;
+    height: 100px;
+    background-position: -415px -102px;
+}
