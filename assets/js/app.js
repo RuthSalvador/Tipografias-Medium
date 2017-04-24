@@ -142,7 +142,21 @@ window.addEventListener("load", function(){
     }; footerRight();
   }; addFooter();
 
+/** Eventos cambio de color al dar click**/
 
+  function changeColor(claseActual, claseNueva){
+    var icono = document.getElementsByClassName(claseActual);
+    for (var i = 0; i < icono.length; i++) {
+      icono[i].addEventListener("click",function(e){
+        e.target.classList.add(claseNueva);
+      })
+    };
+  }
+  changeColor("icon-twitter","celeste");
+  changeColor("icon-facebook","azul");
+  changeColor("icon-heart","rojo");
+  changeColor("icon-marcador","verde");
+  changeColor("icon-chat","lila");
 
 
 })

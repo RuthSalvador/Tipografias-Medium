@@ -119,6 +119,7 @@ header {
   display: inline-block;
   position: absolute;
   bottom: 0px;
+  cursor: pointer;
 }
 
 .raya {
@@ -151,6 +152,7 @@ header {
 
 .header-right span{
   display: inline-block;
+  cursor: pointer;
 }
 
 .header-right > .logo {
@@ -243,15 +245,41 @@ footer div{
 
 footer span{
   padding-right: 21px;
+  cursor: pointer;
 }
 
 .foot-left {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   display: inline-block;
 }
 
 .foot-right{
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   display: inline-block;
   float: right;
+}
+
+.celeste {
+  color: #00a3ff;
+  font-size: 1.8rem !important;
+}
+
+.azul {
+  color: #0500ff;
+  font-size: 1.8rem !important;
+}
+
+.rojo {
+  color: #ff0000;
+  font-size: 1.8rem !important;
+}
+
+.verde {
+  color: #00ff66;
+  font-size: 1.8rem !important;
+}
+
+.lila {
+  color: #d45cf2;
+  font-size: 1.8rem !important;
 }
