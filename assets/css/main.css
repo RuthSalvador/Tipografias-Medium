@@ -5,21 +5,26 @@
 }
 
 .medium {
-    width: 128px;
-    height: 128px;
-    background-position: -525px -199px;
+    width: 35px;
+    height: 35px;
+    background-position: -130px -48px;
+    background-size: 262px 185px;
+    filter: grayscale(100%);
 }
 
 .foto {
     width: 154px;
     height: 87px;
-    background-position: -415px -5px;
+    background-position: -415px 2px;
+    left: 70px;
 }
 
 .perfil {
     width: 114px;
     height: 116px;
-    background-position: -5px -615px;
+    background-position: -142px -43px;
+    background-size: 360px 296px;
+    border-radius: 50px;
 }
 
 .karin {
@@ -77,7 +82,93 @@
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    background-position: -415px -102px;
+    width: 35px;
+    height: 35px;
+    background-position: -142px -43px;
+    background-size: 360px 296px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+}
+
+.encabezado {
+  width: 80%;
+  height: 49px;
+  margin: 0 10%;
+  position: fixed;
+}
+
+.header-left {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.header-left span {
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+}
+
+.raya {
+  height: 35px;
+  border-left: 1px solid #636363;
+  margin-left: 35px;
+  left: 14px;
+}
+
+.header-left > .icon-twitter{
+  left: 245px;
+  bottom: 14px;
+  font-size: 1.5rem;
+}
+
+.header-left > .icon-facebook{
+  left: 280px;
+  bottom: 14px;
+  font-size: 1.5rem;
+}
+
+.header-right {
+  display: inline-block;
+  height: 100%;
+  width: 200px;
+  float: right;
+  position: relative;
+  top: 0;
+}
+
+.header-right span{
+  display: inline-block;
+}
+
+.header-right > .logo {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+.header-right > .perfil {
+  width: 42px;
+  height: 42px;
+  background-position: -2px -236px;
+  background-size: 412px 285px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 56px;
+}
+
+.header-right > .icon-lupa {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 7px;
 }

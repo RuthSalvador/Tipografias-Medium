@@ -5,10 +5,15 @@ window.addEventListener("load", function(){
   var header = document.createElement("header");
   cuerpo.appendChild(header);
 
+  var encabezado = document.createElement("div");
+  encabezado.setAttribute("class","encabezado");
+  header.appendChild(encabezado);
+
   /** Agregando lado izquierdo**/
   function addLeft(){
     var divLeft = document.createElement("div");
-    header.appendChild(divLeft);
+    divLeft.setAttribute("class","header-left");
+    encabezado.appendChild(divLeft);
 
     addSpanL("sprite medium");
     addSpanL("raya");
@@ -28,7 +33,8 @@ window.addEventListener("load", function(){
   /** Agregando lado derecho**/
   function addRight(){
     var divRight = document.createElement("nav");
-    header.appendChild(divRight);
+    divRight.setAttribute("class","header-right");
+    encabezado.appendChild(divRight);
 
     addSpanR("edit");
     addSpanR("icon-lupa");
@@ -45,6 +51,7 @@ window.addEventListener("load", function(){
 
 /** Agregando contenido **/
   var container = document.createElement("div");
+  container.setAttribute("id","container")
   cuerpo.appendChild(container);
 
   /** Agregando lado superior**/
