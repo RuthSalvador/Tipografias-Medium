@@ -106,11 +106,14 @@ window.addEventListener("load", function(){
   function addFooter(){
     var footer = document.createElement("footer");
     cuerpo.appendChild(footer);
-    //footer.appendChild(document.createTextNode("~~ Coded by Ruth Salvador ~~"));
+
+    var divFoot = document.createElement("div");
+    footer.appendChild(divFoot);
 
     function footerLeft(){
       var footLeft = document.createElement("nav");
-      footer.appendChild(footLeft);
+      footLeft.setAttribute("class","foot-left");
+      divFoot.appendChild(footLeft);
 
       addFootL("icon-heart");
       addFootL("icon-chat");
@@ -124,7 +127,8 @@ window.addEventListener("load", function(){
 
     function footerRight(){
       var footRight = document.createElement("nav");
-      footer.appendChild(footRight);
+      footRight.setAttribute("class","foot-right");
+      divFoot.appendChild(footRight);
 
       addFootR("icon-twitter");
       addFootR("icon-facebook");
@@ -135,11 +139,10 @@ window.addEventListener("load", function(){
         span.setAttribute("class", clase);
         footRight.appendChild(span);
       }
-
-
     }; footerRight();
-
-
   }; addFooter();
+
+
+
 
 })

@@ -214,7 +214,6 @@ header {
   position: relative;
   top: 0;
   display: inline-block;
-  line-height: 1;
 }
 
 .center h1 {
@@ -225,4 +224,34 @@ header {
 .center p {
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+footer {
+  border-top: 2px solid #9e9e9e;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer div{
+  width: 52%;
+  margin: 0 24%;
+  padding: 7px 0px;
+  position: relative;
+}
+
+footer span{
+  padding-right: 21px;
+}
+
+.foot-left {
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.foot-right{
+  font-size: 1.8rem;
+  display: inline-block;
+  float: right;
 }
