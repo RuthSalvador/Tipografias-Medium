@@ -57,6 +57,7 @@ window.addEventListener("load", function(){
   /** Agregando lado superior**/
   function addTop(){
     var sectionTop = document.createElement("section");
+    sectionTop.setAttribute("class","section-top")
     container.appendChild(sectionTop);
 
     function addPicPerfil(){
@@ -86,6 +87,7 @@ window.addEventListener("load", function(){
   /** Agregando centro**/
   function addCenter(titulo, parrafo){
     var center = document.createElement("section");
+    center.setAttribute("class","center");
     container.appendChild(center);
 
     var title = document.createElement("h1");

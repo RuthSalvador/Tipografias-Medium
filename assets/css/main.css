@@ -20,11 +20,12 @@
 }
 
 .perfil {
-    width: 114px;
-    height: 116px;
-    background-position: -142px -43px;
-    background-size: 360px 296px;
-    border-radius: 50px;
+  width: 84px;
+  height: 84px;
+  background-position: -5px -550px;
+  background-size: 932px 660px;
+  border-radius: 50px;
+  display: inline-block;
 }
 
 .karin {
@@ -90,6 +91,8 @@
 
 body {
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #535353;
 }
 
 header {
@@ -99,9 +102,9 @@ header {
 }
 
 .encabezado {
-  width: 80%;
+  width: 76%;
   height: 49px;
-  margin: 0 10%;
+  margin: 0 12%;
   position: fixed;
 }
 
@@ -171,4 +174,55 @@ header {
   font-size: 2rem;
   position: absolute;
   bottom: 7px;
+}
+
+#container {
+  width: 100%;
+  position: relative;
+  top: 98px;
+}
+
+.section-top{
+  width: 52%;
+  margin: 0 24%;
+  position: relative;
+  top: 0;
+  display: inline-block;
+}
+
+.section-top .datos-perfil {
+   display: inline-block;
+   font-size: 0.8rem;
+   position: relative;
+   bottom: 14px;
+   left: 21px;
+   line-height: 0.5;
+ }
+
+.datos-perfil .nombre {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.usuario {
+  font-weight: 300;
+}
+
+.center {
+  width: 52%;
+  margin: 0 24%;
+  position: relative;
+  top: 0;
+  display: inline-block;
+  line-height: 1;
+}
+
+.center h1 {
+  font-size: 2.8rem;
+  color: #454545;
+}
+
+.center p {
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
